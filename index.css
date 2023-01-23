@@ -1,7 +1,7 @@
 .header {
     padding: 60px;
     text-align: center;
-    background: #1a42bc;
+    background-image: linear-gradient(to right, #553c9a 45%, #ee4b2b);
     color: white;
     font-size: 30px;
   }
