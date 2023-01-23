@@ -11,10 +11,21 @@
       <h1>Wanna Hear a Joke?</h1>
       <p>Programming Joke Generator</p>
     </div>
-    <div id="toy-header">
+    <!-- joke card -->
+    <div class="image-container">
+      <div class="image-card">
+        <h2 id="card-title" class="title">Joke goes here</h2>
+        <img id="card-image" class="image" src="https://media.istockphoto.com/id/1209755420/vector/joke-comic-text-on-explosion-speech-bubble-in-pop-art-style.jpg?s=1024x1024&w=is&k=20&c=4MCqnoQCbqZ_NnaaHTbj4qHm5LnnSc8SkWwreR1E4NQ=" alt="Title of image goes here too" />
+        <ul id="comments-list" class="comments">
+          <li>Punchline goes here with mouseover event</li>
+          
+        </ul>
+        </form>
+      </div>
+    <div id="joke-header">
       <img
-        src="https://fontmeme.com/permalink/180719/67429e6afec53d21d64643101c43f029.png"
-        alt="toy-header"
+        src="https://www.clipartmax.com/png/middle/147-1479074_the-great-canadian-joke-book-submit-joke.png"
+        alt="joke-header"
       />
     </div>
 
@@ -34,7 +45,7 @@
           type="text"
           name="image"
           value=""
-          placeholder="Enter the joke's image URL..."
+          placeholder="Enter the joke's punchline..."
           class="input-text"
         />
         <br />
@@ -46,10 +57,11 @@
         />
       </form>
     </div>
-    <p style="text-align:center">
-      Andy needs your help! <button id="new-toy-btn">Add a new toy!</button>
-    </p>
-
+    <div class="submit-joke">
+      <p style="text-align:center">
+        Top Ten List! <button id="new-toy-btn">View Top 10 Jokes!</button>
+      </p>
+    </div>
     <div id="toy-collection"></div>
     <script type="text/javascript" src="src/index.js"></script>
   </body>
