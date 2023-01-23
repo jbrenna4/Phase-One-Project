@@ -6,11 +6,51 @@
     <link rel="stylesheet" href="index.css" />
     <script src='index.js' defer></script>
   </head>
+  <style>
+    .button {
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+    
+    .button1 {
+      background-color: white;
+      color: black;
+      border: 2px solid #4CAF50;
+    }
+    
+    .button1:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+    
+    .button2 {
+      background-color: white;
+      color: black;
+      border: 2px solid #008CBA;
+    }
+    
+    .button2:hover {
+      background-color: #008CBA;
+      color: white;
+    }
+    
+    </style>
   <body>
     <div class="header">
       <h1>Wanna Hear a Joke?</h1>
       <p>Programming Joke Generator</p>
     </div>
+    <!-- joke button -->
+    <button class="button button1">I want a joke!</button>
+    <button class="button button2">No jokes for me, thanks.</button>
     <!-- joke card -->
     <div class="image-container">
       <div class="image-card">
@@ -22,6 +62,7 @@
         </ul>
         </form>
       </div>
+    <!-- joke submit -->
     <div id="joke-header">
       <img
         src="https://www.clipartmax.com/png/middle/147-1479074_the-great-canadian-joke-book-submit-joke.png"
@@ -57,7 +98,8 @@
         />
       </form>
     </div>
-    <div class="submit-joke">
+    <!-- joke top ten list -->
+    <div class="top-jokes">
       <p style="text-align:center">
         Top Ten List! <button id="new-toy-btn">View Top 10 Jokes!</button>
       </p>
