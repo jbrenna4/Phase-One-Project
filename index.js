@@ -10,3 +10,13 @@
 //         })
 // };
 // addingClickEventToNoButton();
+
+
+
+const noJokeButton = document.querySelector("body > button.button.button2")
+noJokeButton.addEventListener("click", (e) => {
+console.log("Hello!!!")
+
+})
+
+//Awaiting sound effects for no-joke-button.
