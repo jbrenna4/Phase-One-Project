@@ -12,8 +12,20 @@ const fartShort = new Audio("https://www.soundjay.com/human/sounds/fart-01.mp3")
 //do I need to create an audio html element and append it first? 
 const fartLong = new Audio("https://www.soundjay.com/human/sounds/fart-08.mp3");
 
+const fartShort = new Audio("https://www.soundjay.com/human/sounds/fart-01.mp3");
+//do I need to create an audio html element and append it first? 
+const fartLong = new Audio("https://www.soundjay.com/human/sounds/fart-08.mp3");
+
 const noJokeButton = document.querySelector("body > button.button.button2")
 noJokeButton.addEventListener("click", (e) => {
+    fartShort.play()
+
+});
+
+noJokeButton.addEventListener("dblclick", (e) => {
+    setTimeout(function () { fartLong.play(); }, 1000);
+
+});
     fartShort.play()
 
 });
@@ -26,6 +38,10 @@ noJokeButton.addEventListener("dblclick", (e) => {
 
 //Awaiting sound effects for no-joke-button.
 
+// function randomJoke() {
+//     fetch('https://official-joke-api.appspot.com/jokes/programming/random')
+//     .then(response => response.json())
+//     .then(randomJokeData => renderRandomJoke(randomJokeData))
 // function randomJoke() {
 //     fetch('https://official-joke-api.appspot.com/jokes/programming/random')
 //     .then(response => response.json())
@@ -62,5 +78,3 @@ topTenButton.addEventListener("click", () => {
     }
     
 })
-
-
