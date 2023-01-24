@@ -59,3 +59,9 @@ topTenButton.addEventListener("click", () => {
     }
     
 }, {once : true});
+
+const wantAJokeButton = document.querySelector("body > button.button.button1")
+wantAJokeButton.addEventListener("click", (e) => {
+    console.log("Hello!!!")})
+
+    
