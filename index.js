@@ -1,11 +1,3 @@
-// adding event listener to the no joke button. it's not working of course. 
-// function addingClickEventToNoButton() {
-//     const noJokeButton = document.querySelector("no-joke-button");
-//     noJokeButton.addEventListener("click",
-//         (e) => {console.log("no-joke-button clicked")
-//         })
-// };
-// addingClickEventToNoButton();
 
 
 const fartShort = new Audio("https://www.soundjay.com/human/sounds/fart-01.mp3");
@@ -30,17 +22,12 @@ noJokeButton.addEventListener("dblclick", (e) => {
 });
 
 
-//Awaiting sound effects for no-joke-button.
+//this is the fetch reequest for the random joke data
 
 // function randomJoke() {
 //     fetch('https://official-joke-api.appspot.com/jokes/programming/random')
 //     .then(response => response.json())
-//     .then(randomJokeData => renderRandomJoke(randomJokeData))
-// function randomJoke() {
-//     fetch('https://official-joke-api.appspot.com/jokes/programming/random')
-//     .then(response => response.json())
-//     .then(randomJokeData => renderRandomJoke(randomJokeData))
-        
+//     .then(randomJokeData => renderRandomJoke(randomJokeData))        
 //     };
 // randomJoke();
 
