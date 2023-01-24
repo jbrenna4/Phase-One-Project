@@ -25,7 +25,7 @@ noJokeButton.addEventListener("dblclick", (e) => {
 
 
 noJokeButton.addEventListener("dblclick", (e) => {
-    setTimeout(function () { fartLong.play(); }, 1000);
+    setTimeout(function () { alert("dang, that stinks!!"); }, 1000);
 
 });
 
