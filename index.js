@@ -23,7 +23,8 @@ console.log("Hello!!!")
 function randomJoke() {
     fetch('https://official-joke-api.appspot.com/jokes/programming/random')
     .then(response => response.json())
-    .then(randomJokeData => renderRamens(randomJokeData))
+    .then(randomJokeData => renderRandomeJoke(randomJokeData))
         
     };
 randomJoke();
+
