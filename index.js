@@ -71,4 +71,4 @@ topTenButton.addEventListener("click", () => {
         })
     }
     
-})
+}, {once : true});
