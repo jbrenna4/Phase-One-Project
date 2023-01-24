@@ -24,12 +24,42 @@ noJokeButton.addEventListener("dblclick", (e) => {
 
 //this is the fetch reequest for the random joke data
 
-// function randomJoke() {
-//     fetch('https://official-joke-api.appspot.com/jokes/programming/random')
-//     .then(response => response.json())
-//     .then(randomJokeData => renderRandomJoke(randomJokeData))        
-//     };
-// randomJoke();
+
+    
+   const wantAJokeButton = document.querySelector("body > button.button.button1")
+   const jokeCardTitle = document.querySelector("#card-title")
+   const jokeCardPunchline = document.querySelector("#punchline")
+
+    wantAJokeButton.addEventListener("click", () => {
+
+    
+
+    
+    fetch('https://official-joke-api.appspot.com/jokes/programming/random')
+    .then(response => response.json())
+    .then(randomJokeData => renderRandomJoke(randomJokeData))        
+    
+
+   function renderRandomJoke(joke){
+   
+   
+   randomSetup = joke[0].setup
+   randomPunchline = joke[0].punchline
+   console.log(randomSetup)
+   console.log(randomPunchline)
+
+   
+    jokeCardTitle.textContent = randomSetup
+    jokeCardPunchline.textContent = randomPunchline
+
+   }})
+
+
+    
+    
+
+
+
 
 
 const topTenLocation = document.querySelector("#jokes-list > li");
@@ -60,8 +90,6 @@ topTenButton.addEventListener("click", () => {
     
 }, {once : true});
 
-const wantAJokeButton = document.querySelector("body > button.button.button1")
-wantAJokeButton.addEventListener("click", (e) => {
-    console.log("Hello!!!")})
+
 
     
