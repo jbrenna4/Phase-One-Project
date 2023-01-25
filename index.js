@@ -26,37 +26,32 @@ noJokeButton.addEventListener("dblclick", (e) => {
 
 
     
-   const wantAJokeButton = document.querySelector("body > button.button.button1")
-   const jokeCardTitle = document.querySelector("#card-title")
-   const jokeCardPunchline = document.querySelector("#punchline")
+const wantAJokeButton = document.querySelector("body > button.button.button1")
+const jokeCardTitle = document.querySelector("#card-title")
+const jokeCardPunchline = document.querySelector("#punchline")
 
-    wantAJokeButton.addEventListener("click", () => {
-
-    
-
-    
+wantAJokeButton.addEventListener("click", () => {    
     fetch('https://official-joke-api.appspot.com/jokes/programming/random')
     .then(response => response.json())
     .then(randomJokeData => renderRandomJoke(randomJokeData))        
     
-
-   function renderRandomJoke(joke){
-   
+function renderRandomJoke(joke){
    
    randomSetup = joke[0].setup
    randomPunchline = joke[0].punchline
-   console.log(randomSetup)
-   console.log(randomPunchline)
-
    
     jokeCardTitle.textContent = randomSetup
     jokeCardPunchline.textContent = randomPunchline
 
-   }})
+}})
 
-
-    
-    
+//it would be cool to do a mouseover event to reveal the punchline. 
+//we'd change the html element to have text saying "hover to reveal punchline"
+//we pull out the punchline portion of the click event. 
+//we create a mouseover event on that element. we put a new fetch in it? then use that randomPunchline = joke[0].punchline 
+// also we should probably declare these variables? we don't have a const or a let on them. maybe make them in global scope too?
+// does it make sense to put these events into functions? 
+// we should be mindful of indentation and spacing issues. 
 
 
 
@@ -92,4 +87,3 @@ topTenButton.addEventListener("click", () => {
 
 
 
-    
