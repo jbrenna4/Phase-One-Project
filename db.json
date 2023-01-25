@@ -1,0 +1,28 @@
+{
+  "jokes": [
+    {
+      "type": "programming",
+      "setup": "toy",
+      "punchline": "toy",
+      "id": 1
+    },
+    {
+      "type": "programming",
+      "setup": "",
+      "punchline": "",
+      "id": 2
+    },
+    {
+      "type": "programming",
+      "setup": "toy",
+      "punchline": "toy",
+      "id": 3
+    },
+    {
+      "type": "programming",
+      "setup": "toy",
+      "punchline": "toy",
+      "id": 4
+    }
+  ]
+}

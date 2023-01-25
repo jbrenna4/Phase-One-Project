@@ -91,8 +91,20 @@ jokeSubmitForm.addEventListener ('submit', (e) => {
     newJokeBody = e.target.name.value
     newJokePunchline = e.target.image.value
 
-    jokeCardTitle.textContent = newJokeBody
-    jokeCardPunchline.textContent = newJokePunchline
+    jokeCardTitle.textContent = e.target.name.value
+    jokeCardPunchline.textContent = e.target.image.value
+
+    fetch("http://localhost:3000/jokes", {
+    method: "POST",
+    headers: {"Content-type": "application/json"},
+    body: JSON.stringify({
+    type: "programming",
+    setup: e.target.name.value,
+    punchline: e.target.image.value
+    }),
+    })
+    .then((response) => response.json())
+    .then((json) => alert("You successfully submitted a joke!!"));
 
     jokeSubmitForm.reset();
 })
