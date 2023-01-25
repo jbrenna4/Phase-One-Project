@@ -23,8 +23,6 @@ noJokeButton.addEventListener("dblclick", (e) => {
 
 
 //this is the fetch reequest for the random joke data
-
-
     
 const wantAJokeButton = document.querySelector("body > button.button.button1")
 const jokeCardTitle = document.querySelector("#card-title")
@@ -61,8 +59,6 @@ const topTenLocation = document.querySelector("#jokes-list > li");
 const topTenButton = document.querySelector("#new-joke-btn")
 
 topTenButton.addEventListener("click", () => {
-    console.log("jokes please")
-    
     
     fetch ('https://official-joke-api.appspot.com/jokes/programming/ten')
     .then (r => r.json())
@@ -77,13 +73,29 @@ topTenButton.addEventListener("click", () => {
            
            const li = document.createElement("li");
            li.textContent = combinedJoke;
-           console.log(combinedJoke)
            
            topTenLocation.append(li);
         })
     }
     
 }, {once : true});
+
+//FORM
+
+const jokeSubmitForm = document.querySelector("#joke-header > form")
+
+
+jokeSubmitForm.addEventListener ('submit', (e) => {
+    e.preventDefault();
+
+    newJokeBody = e.target.name.value
+    newJokePunchline = e.target.image.value
+
+    jokeCardTitle.textContent = newJokeBody
+    jokeCardPunchline.textContent = newJokePunchline
+
+    jokeSubmitForm.reset();
+})
 
 
 
