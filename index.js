@@ -39,9 +39,23 @@ function renderRandomJoke(joke){
    randomPunchline = joke[0].punchline
    
     jokeCardTitle.textContent = randomSetup
+    
+
+
+    onmouseover = document.getElementById("punchline")
+jokeCardPunchline.addEventListener("mouseover", (e) => {
     jokeCardPunchline.textContent = randomPunchline
 
+})
+
 }})
+
+
+//onmouseover = document.getElementById("punchline")
+//jokeCardPunchline.addEventListener("mouseover", (e) => {
+   // console.log(onmouseover)
+
+
 
 //it would be cool to do a mouseover event to reveal the punchline. 
 //we'd change the html element to have text saying "hover to reveal punchline"
