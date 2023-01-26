@@ -155,6 +155,18 @@
       "setup": "Exams",
       "punchline": "ddds",
       "id": 26
+    },
+    {
+      "type": "programming",
+      "setup": "toy",
+      "punchline": "toy",
+      "id": 27
+    },
+    {
+      "type": "programming",
+      "setup": "toy",
+      "punchline": "toy",
+      "id": 28
     }
   ]
 }
