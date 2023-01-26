@@ -11,13 +11,13 @@
     width: auto;
   }
 
-  .image-container {
+  .joke-container {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
   }
   
-  .image-card {
+  .joke-card {
     width: 300px;
     border: 1px solid #00000020;
     border-radius: 2px;
@@ -37,38 +37,20 @@
     font-weight: 600;
     color: #000000dd;
   }
+
+  #punchline {
+    text-align: left;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000000dd;
+  }
   
   .likes-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
-  }
-  
-  .likes {
-    font-size: 0.9rem;
-    font-weight: 600;
-  }
-  
-  .like-button {
-    color: rgb(255, 127, 80);
-    font-size: 1.5rem;
-    border: none;
-    background: none;
-    transition: color 300ms;
-    cursor: pointer;
-  }
-  
-  .like-button:hover {
-    color: rgb(241, 71, 19);
-  }
-  
-  .like-button:active {
-    color: rgb(253, 159, 124);
-  }
-  
-  .like-button:focus {
-    outline: none;
   }
   
   .comments {
@@ -86,4 +68,17 @@
   .top-jokes {
     font-size: 18px;
     font-weight: 600;
+    justify-content: flex-end;
   }
+
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1.5fr .5fr;
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 2 / 1 / 3 / 2; }

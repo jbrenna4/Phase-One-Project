@@ -52,16 +52,6 @@ function renderRandomJoke(joke){
 
 }});
 
-//it would be cool to do a mouseover event to reveal the punchline. 
-//we'd change the html element to have text saying "hover to reveal punchline"
-//we pull out the punchline portion of the click event. 
-//we create a mouseover event on that element. we put a new fetch in it? then use that randomPunchline = joke[0].punchline 
-// also we should probably declare these variables? we don't have a const or a let on them. maybe make them in global scope too?
-// does it make sense to put these events into functions? 
-// we should be mindful of indentation and spacing issues. 
-
-// remove fetch from the click and then use that data for a click event and a mouseover event. 
-
 
 
 const topTenLocation = document.querySelector("#jokes-list > li");
