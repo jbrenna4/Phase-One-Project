@@ -67,6 +67,9 @@ function renderRandomJoke(joke){
 const topTenLocation = document.querySelector("#jokes-list > li");
 const topTenButton = document.querySelector("#new-joke-btn")
 
+let punchlinesall = [];
+let btnnumber = 0;
+
 topTenButton.addEventListener("click", () => {
     
     fetch ('https://official-joke-api.appspot.com/jokes/programming/ten')
@@ -77,17 +80,46 @@ topTenButton.addEventListener("click", () => {
        jokes.forEach((joke) => {
            setup = joke.setup;
            punchline = joke.punchline;
+           punchlinesall.push(punchline);
            
            combinedJoke = setup + " " + punchline;
-           
+
            const li = document.createElement("li");
            li.textContent = combinedJoke;
            
            topTenLocation.append(li);
+           revealButton();
         })
     }
     
 }, {once : true});
+
+//Reveal Button
+
+function revealButton(){
+    let p = document.createElement('p');
+    let btn = document.createElement('button');
+
+    btn.addEventListener('click', () => {
+
+        p.textContent = punchlinesall[1];
+    })
+    p.appendChild(btn);
+    
+    //console.log(punchlinesall) 
+    //console.log(btnnumber)
+
+    if(btnnumber == 0){
+        punchline1 = `${punchlinesall[0]}`;
+    }
+
+    btnnumber++
+
+    btn.textContent = 'Reveal Punchline # '+ btnnumber;
+    topTenLocation.appendChild(p);
+
+}
+
 
 //FORM
 
