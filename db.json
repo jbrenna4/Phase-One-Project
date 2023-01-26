@@ -149,6 +149,12 @@
       "setup": "Practical #1",
       "punchline": "s",
       "id": 25
+    },
+    {
+      "type": "programming",
+      "setup": "toy",
+      "punchline": "toy",
+      "id": 26
     }
   ]
 }
