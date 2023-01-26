@@ -40,9 +40,14 @@ function renderRandomJoke(joke){
    
     jokeCardTitle.textContent = randomSetup
 
-    onmouseover = document.getElementById("punchline")
+    let onmouseover = document.getElementById("punchline")
     jokeCardPunchline.addEventListener("mouseover", (e) => {
     jokeCardPunchline.textContent = randomPunchline
+    })
+
+    onmouseover = document.getElementById("punchline")
+    jokeCardPunchline.addEventListener("mouseout", (e) => {
+    jokeCardPunchline.textContent = "Hover here to reveal punchline"
     })
 
 }});
