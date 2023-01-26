@@ -23,6 +23,132 @@
       "setup": "toy",
       "punchline": "toy",
       "id": 4
+    },
+    {
+      "type": "programming",
+      "setup": "Exams",
+      "punchline": "ddds",
+      "id": 5
+    },
+    {
+      "type": "programming",
+      "setup": "Examinations",
+      "punchline": "Mel",
+      "id": 6
+    },
+    {
+      "type": "programming",
+      "setup": "Exams",
+      "punchline": "Mel",
+      "id": 7
+    },
+    {
+      "type": "programming",
+      "setup": "Examinations",
+      "punchline": "Duane",
+      "id": 8
+    },
+    {
+      "type": "programming",
+      "setup": "Online Quizzes",
+      "punchline": "Duane",
+      "id": 9
+    },
+    {
+      "type": "programming",
+      "setup": "Online Quizzes",
+      "punchline": "s",
+      "id": 10
+    },
+    {
+      "type": "programming",
+      "setup": "Online Quizzes",
+      "punchline": "s",
+      "id": 11
+    },
+    {
+      "type": "programming",
+      "setup": "Online Quizzes",
+      "punchline": "ddds",
+      "id": 12
+    },
+    {
+      "type": "programming",
+      "setup": "Online Quizzes",
+      "punchline": "Duane",
+      "id": 13
+    },
+    {
+      "type": "programming",
+      "setup": "Examinations",
+      "punchline": "Mel",
+      "id": 14
+    },
+    {
+      "type": "programming",
+      "setup": "DUANE GRELL",
+      "punchline": "d",
+      "id": 15
+    },
+    {
+      "type": "programming",
+      "setup": "Online Quizzes",
+      "punchline": "Mel",
+      "id": 16
+    },
+    {
+      "type": "programming",
+      "setup": "Exams",
+      "punchline": "Duane",
+      "id": 17
+    },
+    {
+      "type": "programming",
+      "setup": "Practical #1",
+      "punchline": "ddds",
+      "id": 18
+    },
+    {
+      "type": "programming",
+      "setup": "Practical #1",
+      "punchline": "ddds",
+      "id": 19
+    },
+    {
+      "type": "programming",
+      "setup": "Online Quizzes",
+      "punchline": "Duane",
+      "id": 20
+    },
+    {
+      "type": "programming",
+      "setup": "DUANE GRELL",
+      "punchline": "Mel",
+      "id": 21
+    },
+    {
+      "type": "programming",
+      "setup": "Practical #1",
+      "punchline": "ddds",
+      "id": 22
+    },
+    {
+      "type": "programming",
+      "setup": "Practical #1",
+      "punchline": "Mel",
+      "id": 23
+    },
+    {
+      "type": "programming",
+      "setup": "Practical #1",
+      "punchline": "Duane",
+      "id": 24
+    },
+    {
+      "type": "programming",
+      "setup": "Practical #1",
+      "punchline": "s",
+      "id": 25
     }
   ]
 }

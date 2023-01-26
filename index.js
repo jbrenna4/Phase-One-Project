@@ -113,10 +113,10 @@ function revealButton(){
 
 //FORM
 
-const jokeSubmitForm = document.querySelector("#joke-header > form")
+const jokeSubmitForm = document.querySelector("body > div.parent > div.div3 > div.container > form")
 
 
-jokeSubmitForm.addEventListener ('submit', (e) => {
+jokeSubmitForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
     newJokeBody = e.target.name.value
@@ -139,6 +139,7 @@ jokeSubmitForm.addEventListener ('submit', (e) => {
 
     jokeSubmitForm.reset();
 })
+
 
 
 
