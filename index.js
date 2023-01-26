@@ -1,7 +1,6 @@
 
-
-const fartShort = new Audio("https://www.soundjay.com/human/sounds/fart-01.mp3");
-//do I need to create an audio html element and append it first? 
+//Buttons
+const fartShort = new Audio("https://www.soundjay.com/human/sounds/fart-01.mp3"); 
 const fartLong = new Audio("https://www.soundjay.com/human/sounds/fart-08.mp3");
 
 const noJokeButton = document.querySelector("body > button.button.button2")
@@ -22,7 +21,7 @@ noJokeButton.addEventListener("dblclick", (e) => {
 });
 
 
-//this is the fetch reequest for the random joke data
+//Random Joke - fetch, click event, render function, mouseover and mouseout functions
     
 const wantAJokeButton = document.querySelector("body > button.button.button1")
 const jokeCardTitle = document.querySelector("#card-title")
@@ -53,7 +52,7 @@ function renderRandomJoke(joke){
 }});
 
 
-
+//top 10 list, fetch, forEach 
 const topTenLocation = document.querySelector("#jokes-list > li");
 const topTenButton = document.querySelector("#new-joke-btn")
 
@@ -80,7 +79,7 @@ topTenButton.addEventListener("click", () => {
     
 }, {once : true});
 
-//Reveal Button
+//Reveal Button for the top 10 list
 
 function revealButton(entry){
     let p = document.createElement('p');
@@ -97,7 +96,7 @@ function revealButton(entry){
 }
 
 
-//FORM
+//Submit form - POST request, alert, form resets
 
 const jokeSubmitForm = document.querySelector("body > div.parent > div.div3 > div.container > form")
 
