@@ -39,9 +39,13 @@ function renderRandomJoke(joke){
    randomPunchline = joke[0].punchline
    
     jokeCardTitle.textContent = randomSetup
-    jokeCardPunchline.textContent = randomPunchline
 
-}})
+    onmouseover = document.getElementById("punchline")
+    jokeCardPunchline.addEventListener("mouseover", (e) => {
+    jokeCardPunchline.textContent = randomPunchline
+    })
+
+}});
 
 //it would be cool to do a mouseover event to reveal the punchline. 
 //we'd change the html element to have text saying "hover to reveal punchline"
@@ -51,7 +55,7 @@ function renderRandomJoke(joke){
 // does it make sense to put these events into functions? 
 // we should be mindful of indentation and spacing issues. 
 
-
+// remove fetch from the click and then use that data for a click event and a mouseover event. 
 
 
 
